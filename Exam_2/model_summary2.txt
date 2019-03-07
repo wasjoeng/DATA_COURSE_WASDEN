@@ -1,0 +1,21 @@
+
+Call:
+lm(formula = Diversity ~ Precip * CO2_Concentration, data = df)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-556.58 -112.01  -12.53   78.48  986.08 
+
+Coefficients:
+                           Estimate Std. Error t value Pr(>|t|)    
+(Intercept)              -3938.8949   733.1392  -5.373 1.58e-07 ***
+Precip                     963.9684   209.7199   4.596 6.39e-06 ***
+CO2_Concentration           10.6100     1.9240   5.514 7.67e-08 ***
+Precip:CO2_Concentration    -1.9491     0.5405  -3.606 0.000365 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 201.1 on 294 degrees of freedom
+Multiple R-squared:  0.9159,	Adjusted R-squared:  0.915 
+F-statistic:  1067 on 3 and 294 DF,  p-value: < 2.2e-16
+
